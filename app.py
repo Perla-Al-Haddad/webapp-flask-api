@@ -1,9 +1,11 @@
 import json
 from flask import Flask
 from flask import jsonify
+from flask_cors import CORS
 import pandas as pd
 
 app = Flask(__name__)
+CORS(app)
 
 
 def formatResponse(data):
